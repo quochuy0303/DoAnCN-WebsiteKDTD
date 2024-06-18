@@ -8,6 +8,27 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\admin\assets\App-Bo9or6vx.js" />
+    <Content Remove="wwwroot\admin\assets\avater-CnKdNFHs.png" />
+    <Content Remove="wwwroot\admin\assets\FormControlLabel-VzOOFBVS.js" />
+    <Content Remove="wwwroot\admin\assets\index-BBTTRoYk.css" />
+    <Content Remove="wwwroot\admin\assets\index-BnRloM2y.js" />
+    <Content Remove="wwwroot\admin\assets\index-Cyi007ge.js" />
+    <Content Remove="wwwroot\admin\assets\Login-BEC-1MCo.js" />
+    <Content Remove="wwwroot\admin\assets\MonaSans-Black-DdQ9gwu-.woff2" />
+    <Content Remove="wwwroot\admin\assets\MonaSans-Bold-Cb1QVoVZ.woff2" />
+    <Content Remove="wwwroot\admin\assets\MonaSans-ExtraBold-CHOuLgpn.woff2" />
+    <Content Remove="wwwroot\admin\assets\MonaSans-ExtraLight-B9ta6w1N.woff2" />
+    <Content Remove="wwwroot\admin\assets\MonaSans-Light-DmwAb8nw.woff2" />
+    <Content Remove="wwwroot\admin\assets\MonaSans-Medium-Dbn-dGmp.woff2" />
+    <Content Remove="wwwroot\admin\assets\MonaSans-Regular-TGsQTeZ5.woff2" />
+    <Content Remove="wwwroot\admin\assets\MonaSans-SemiBold-mID-5KUy.woff2" />
+    <Content Remove="wwwroot\admin\assets\Signup-CLEeF3hN.js" />
+    <Content Remove="wwwroot\admin\dashdarkx.ico" />
+    <Content Remove="wwwroot\admin\index.html" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.6">
       <PrivateAssets>all</PrivateAssets>
@@ -18,6 +39,27 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\admin\assets\App-Bo9or6vx.js" />
+    <None Include="wwwroot\admin\assets\avater-CnKdNFHs.png" />
+    <None Include="wwwroot\admin\assets\FormControlLabel-VzOOFBVS.js" />
+    <None Include="wwwroot\admin\assets\index-BBTTRoYk.css" />
+    <None Include="wwwroot\admin\assets\index-BnRloM2y.js" />
+    <None Include="wwwroot\admin\assets\index-Cyi007ge.js" />
+    <None Include="wwwroot\admin\assets\Login-BEC-1MCo.js" />
+    <None Include="wwwroot\admin\assets\MonaSans-Black-DdQ9gwu-.woff2" />
+    <None Include="wwwroot\admin\assets\MonaSans-Bold-Cb1QVoVZ.woff2" />
+    <None Include="wwwroot\admin\assets\MonaSans-ExtraBold-CHOuLgpn.woff2" />
+    <None Include="wwwroot\admin\assets\MonaSans-ExtraLight-B9ta6w1N.woff2" />
+    <None Include="wwwroot\admin\assets\MonaSans-Light-DmwAb8nw.woff2" />
+    <None Include="wwwroot\admin\assets\MonaSans-Medium-Dbn-dGmp.woff2" />
+    <None Include="wwwroot\admin\assets\MonaSans-Regular-TGsQTeZ5.woff2" />
+    <None Include="wwwroot\admin\assets\MonaSans-SemiBold-mID-5KUy.woff2" />
+    <None Include="wwwroot\admin\assets\Signup-CLEeF3hN.js" />
+    <None Include="wwwroot\admin\dashdarkx.ico" />
+    <None Include="wwwroot\admin\index.html" />
   </ItemGroup>
 
 </Project>

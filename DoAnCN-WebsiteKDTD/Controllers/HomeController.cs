@@ -6,11 +6,11 @@ namespace DoAnCN_WebsiteKDTD.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly MyShopDBContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(MyShopDBContext context)
         {
-            _logger = logger;
+            _context = context;
         }
 
         public IActionResult Index()

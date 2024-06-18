@@ -1,7 +1,16 @@
+using DoAnCN_WebsiteKDTD.Models;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+
+// Add DbContext with connection string
+var connectionString = builder.Configuration.GetConnectionString("MyShopDBConnection");
+builder.Services.AddDbContext<MyShopDBContext>(options =>
+    options.UseSqlServer(connectionString));
 
 var app = builder.Build();
 

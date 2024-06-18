@@ -1,0 +1,74 @@
+﻿@model IEnumerable<DoAnCN_WebsiteKDTD.Models.Product>
+
+@{
+    ViewData["Title"] = "Products";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="title">Products</h2>
+<div class="content-container">
+<div class="row">
+    @foreach (var product in Model)
+    {
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card h-100">
+                <img src="@product.ImageUrl" class="card-img-top" alt="@product.ProductName">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="product-details-@product.ProductId" target="_blank">@product.ProductName</a></h5>
+                    <p class="card-text">@String.Format("{0:n0} VND", product.Price)</p> <!-- Chuyển đổi định dạng tiền tệ -->
+                    <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+</div>
+
+<style>
+    .title {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .card {
+        border: none;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .card:hover {
+            transform: translateY(-10px); /* Chuyển động lên khi di chuột */
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+    .card-img-top {
+        width: 300px;
+        height: 300px;
+    }
+
+    .card-body {
+        text-align: center;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .card-text {
+        color: grey;
+    }
+
+    .btn {
+        background-color: darksalmon;
+        border: none;
+    }
+
+        .btn:hover {
+            background-color: salmon;
+        }
+
+    .content-container {
+        margin-bottom: 75px; /* Thêm khoảng cách với footer */
+    }
+</style>
